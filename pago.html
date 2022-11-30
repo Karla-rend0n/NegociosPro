@@ -3,7 +3,7 @@
       <div id="paypal-button-container"></div>
     </div>
   </div>
-<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=MXN" data-sdk-integration-source="button-factory"></script>
 <script>
   function initPayPalButton() {
     paypal.Buttons({
@@ -17,7 +17,7 @@
 
       createOrder: function(data, actions) {
         return actions.order.create({
-          purchase_units: [{"amount":{"currency_code":"USD","value":2.01,"breakdown":{"item_total":{"currency_code":"USD","value":1},"shipping":{"currency_code":"USD","value":1},"tax_total":{"currency_code":"USD","value":0.01}}}}]
+          purchase_units: [{"amount":{"currency_code":"MXN","value":410.16,"breakdown":{"item_total":{"currency_code":"MXN","value":350},"shipping":{"currency_code":"MXN","value":60},"tax_total":{"currency_code":"MXN","value":0.16}}}}]
         });
       },
 
@@ -25,7 +25,7 @@
         return actions.order.capture().then(function(orderData) {
           
           // Full available details
-          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+          console.log('Capture result', orderData, JSON.stringify(orderData, null, 350));
 
           // Show a success message within this page, e.g.
           const element = document.getElementById('paypal-button-container');
