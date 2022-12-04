@@ -2,131 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Booklife, venta de libros nuevos, usados y electronicos; con el objetivo de promoveer la lectura. Nos especializamos en que la lectura pueda estar al accesible a todo mexico, ya que contamos con envios y garantia"/>
-    <meta name="keywords" content="Libros, Libros usados, Aguascalientes, Libros electronicos"/>
-    <meta name="robots" content="index"/>
-    <meta name="author" content="Pablo Lopez, Karla Rendón, Sarai Guzman"/>
-    <meta name="copyright" content="Propietario BookLife"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="BOOKLIFE"/>
-    <meta property="fb:app_id" content="928977633900253" />
     <title>BookLife</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" /><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFJKSPXE93"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
 
       gtag('config', 'G-WFJKSPXE93');
     </script>
-
-</head>
+  </head>
 <body>
-    <div class="header-div">
-        <ul class="nav bg-light mb-0 justify-content-end">
-            <div id="nav1">
+  <div id="header-div">
+    <ul class="navbar bg-negro mb-0 sticky-top">
+        <div id="nav1">
             <li class="nav-item">
-                <nav class="nav bg-light">
+                <nav class="navbar bg-main ms-1">
                     <div class="container-fluid">
-                      <a title= "Contact us" class="navbar-brand" href="#">
-                        Contact Us
+
+                      <!-- Example split danger button -->
+                    <div class="btn-group">
+                      <a class="navbar-brand text-blanco" href="index.html">
+                        <img src="Img\logo.jpeg" alt="BookLife"  class="text-blanco d-inline-block align-text-top">
                       </a>
+                      <button type="button" class="btn btn-logo text-blanco dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Lista de Deseos</a></li>
+                        <li><a class="dropdown-item" href="#">Carro de compras</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Contáctanos</a></li>
+                      </ul>
                     </div>
-                  </nav>
+
+                    
+                    </div>
+                </nav>
             </li>
-            </div>
-        
-        
-            <div id="nav2"> 
-            <li class="nav bg-light dropdown ms-4">
-                <a title="Lenguage" class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Lenguage
+            <li class="navbar bg-negro dropdown ms-4">
+                <a class="nav-link dropdown-toggle text-blanco" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Libros
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a title="Spanish" class="dropdown-item" href="#">Spanish</a></li>
-                  <li><a title="English" class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Fantasía</a></li>
+                  <li><a class="dropdown-item" href="#">Manga</a></li>
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
                 </ul>
             </li>
-            <li class="nav-item">
-                <nav class="nav bg-light">
-                    <div class="container-fluid">
-                      <a title="Log In" class="navbar-brand" href="#">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4929/4929629.png" alt="Icono de usuario" width="30" height="24" class="d-inline-block align-text-top" title="Icono de usuario">
-                        Log In
-                      </a>
-                    </div>
-                  </nav>
+            
+            <li class="navbar bg-negro ms-4">
+                <a class="nav-link text-blanco" href="">e-Books</a>
             </li>
-            <li class="nav-item">
-                <nav class="nav bg-light">
-                    <div class="container-fluid">
-                      <a title="Shopping" class="navbar-brand" href="#">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4437/4437607.png" alt="Carrito de compra" width="30" height="24" class="d-inline-block align-text-top" title="Carrito de compra">
-                        Shopping Cart
-                      </a>
-                    </div>
-                  </nav>
+            
+            <li class="navbar bg-negro ms-4">
+                <a class="nav-link text-blanco" href="">Sobre Nosotros</a>
             </li>
-            </div>
-          </ul>
+        
         </div>
-    
-        <div id="header-div">
-            <ul class="navbar bg-light mb-0">
-                <div id="nav1">
-                <li class="nav-item">
-                    <nav class="navbar bg-light">
-                        <div class="container-fluid">
-                        <a title="LogoBooklife" class="navbar-brand" href="#">
-                            <img src="Img\logo.jpeg" alt="Logo BookLife" width="150" height="60" class="d-inline-block align-text-top" title="Logo BookLife">
-                        </a>
-                        </div>
-                    </nav>
-                </li>
-                <li class="navbar bg-light dropdown ms-4">
-                    <a title="Categorias" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Books
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Fantasy</a></li>
-                    <li><a class="dropdown-item" href="#">Manga</a></li>
-                    <li><a class="dropdown-item" href="#">Drama</a></li>
-                    </ul>
-                </li>
-                <li class="navbar bg-light ms-4">
-                <a title="E-Books" class="nav-link" href="#">E-Books</a>
-                </li>
-                <li class="navbar bg-light ms-4">
-                <a title="About us" class="nav-link">About Us</a>
-                </li>
-                </div>
-                <div class="d-flex flex-row-reverse"> 
-                <li class="navbar bg-light" id="buscador">
-                    <form class="d-flex navbar" role="search">
-                        <input class="navbar bg-light border border-3 rounded-pill ms-3" type="search" placeholder="  Type something" aria-label="Search">
-                        <button class="button rounded-pill type="submit">Search</button>
-                    </form>
-                </li>
-                </div>
-            </ul>
-        </div>
+        
+        <div id="nav2"> 
+            <li class="navbar ms-4">
+                <a class="btn text-blanco" href="#">Iniciar Sesión</a>
 
+            </li>
+            <li class="navbar ms-4">
+                <a class="btn text-blanco">Registrarse</a>
+            </li>
+        </div>
+        
+    </ul>
+</div>
+    
     <div id="carouselExampleControls" class="carousel slide mt-25 p-5 m-5" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
-            <img src="Img\1.png" class="d-block w-30 h-100" alt="Descuento Navideño" title="Descuento Navideño">
+            <img src="Img\1.png" class="d-block w-30 h-100" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="5000">
-            <img src="Img\2.png" class="d-block w-30 h-100" alt="Evento de lectura" title="Evento de lectura">
+            <img src="Img\2.png" class="d-block w-30 h-100" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="5000">
-            <img src="Img\3.png" class="d-block w-30 h-100" alt="Curso Online" title="Curso Online">
+            <img src="Img\3.png" class="d-block w-30 h-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -143,31 +105,37 @@
         <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
             <div class="card h-100">
-              <img src="https://th.bing.com/th/id/OIP.NYPMe0Pveu_T2ks1QlT3ywHaLa?pid=ImgDet&rs=1" class="card-img-top" alt="La Historia de un loco" title="Libro">
+              <img src="https://th.bing.com/th/id/OIP.NYPMe0Pveu_T2ks1QlT3ywHaLa?pid=ImgDet&rs=1" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">La Historia Del Loco</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Only E-Book</h6>
                 <p class="card-text">
                   $370.27</p>
                   <div>
-                <a title="Añadir" href="#" class="card-link"><img src="Img\añadircarro.png" alt="añadircarro" title="Añadir al carrito"></a>
-                <a title="LikeIcon" href="#" class="card-link"><img src="Img\like.png" alt="Like" title="Like"></a>
-                <a title="MoreIcon" href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt="Mas" title="Mostrar más"></a>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                      <input type="hidden" name="cmd" value="_s-xclick">
+                      <input type="hidden" name="hosted_button_id" value="NQPHC6NMAY692">
+                      <input type="image" src="https://www.sandbox.paypal.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                      <img alt="" border="0" src="https://www.sandbox.paypal.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                      </form>
+                      
+                <a href="#" class="card-link"><img src="Img\like.png" alt=""></a>
+                <a href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt=""></a>
                   </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="https://th.bing.com/th/id/R.6645067dcdb772a87629c2b4d2e90779?rik=aXV7WWXz0JngfA&pid=ImgRaw&r=0" class="card-img-top" alt="El Sutil Arte De Que Te Importe Una Mierda" title="Libro">
+              <img src="https://th.bing.com/th/id/R.6645067dcdb772a87629c2b4d2e90779?rik=aXV7WWXz0JngfA&pid=ImgRaw&r=0" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="El Sutil Arte De Que Te Importe Una Mierda">El Sutil Arte De Que Te Importe Una Mierda</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Physical and E-book Available</h6>
                 <p class="card-text">$232.00</p>
                 <div>
-                  <a title="Añadir" href="#" class="card-link"><img src="Img\añadircarro.png" alt="añadircarro" title="Añadir al carrito"></a>
-                  <a title="LikeIcon" href="#" class="card-link"><img src="Img\like.png" alt="Like" title="Like"></a>
-                  <a title="MoreIcon" href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt="Mas" title="Mostrar más"></a>
+                  <a href="#" class="card-link"><img src="Img\añadircarro.png" alt=""></a>
+                  <a href="#" class="card-link"><img src="Img\like.png" alt=""></a>
+                  <a href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt=""></a>
                 </div>
               </div>
             </div>
@@ -175,30 +143,30 @@
 
           <div class="col">
             <div class="card h-100">
-              <img src="https://th.bing.com/th/id/R.95c5a21a5bac5d4c9492fb1fe26b5255?rik=uGWTrzrJBS2i6w&pid=ImgRaw&r=0" class="card-img-top" alt="Narnia" title="Libro">
+              <img src="https://th.bing.com/th/id/R.95c5a21a5bac5d4c9492fb1fe26b5255?rik=uGWTrzrJBS2i6w&pid=ImgRaw&r=0" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Narnia Libro 1</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Physical and E-book Available</h6>
                 <p class="card-text">$232.00</p>
                 <div>
-                  <a title="Añadir" href="#" class="card-link"><img src="Img\añadircarro.png" alt="añadircarro" title="Añadir al carrito"></a>
-                <a title="LikeIcon" href="#" class="card-link"><img src="Img\like.png" alt="Like" title="Like"></a>
-                <a title="MoreIcon" href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt="Mas" title="Mostrar más"></a>
+                  <a href="#" class="card-link"><img src="Img\añadircarro.png" alt=""></a>
+                <a href="#" class="card-link"><img src="Img\like.png" alt=""></a>
+                <a href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt=""></a>
                </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="https://th.bing.com/th/id/R.76ab884b4e630c0805c219b72ae427f0?rik=dxNvQ60YrFFlQA&pid=ImgRaw&r=0" class="card-img-top" alt="Harry Potter" title="Libro">
+              <img src="https://th.bing.com/th/id/R.76ab884b4e630c0805c219b72ae427f0?rik=dxNvQ60YrFFlQA&pid=ImgRaw&r=0" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Harry Potter</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Physical and E-book Available</h6>
                 <p class="card-text">$300.00</p>
                 <div>
-                  <a title="Añadir" href="#" class="card-link"><img src="Img\añadircarro.png" alt="añadircarro" title="Añadir al carrito"></a>
-                  <a title="LikeIcon" href="#" class="card-link"><img src="Img\like.png" alt="Like" title="Like"></a>
-                  <a title="MoreIcon" href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt="Mas" title="Mostrar más"></a>
+                  <a href="#" class="card-link"><img src="Img\añadircarro.png" alt=""></a>
+                  <a href="#" class="card-link"><img src="Img\like.png" alt=""></a>
+                  <a href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt=""></a>
                  </div>
               </div>
             </div>
@@ -206,60 +174,60 @@
           <div class="col">
 
             <div class="card h-100">
-              <img src="https://th.bing.com/th/id/OIP.rpVEB8By8KHvmgVcFJleaQHaLV?pid=ImgDet&w=502&h=768&rs=1" class="card-img-top" alt="Antes de ti" title="Libro">
+              <img src="https://th.bing.com/th/id/OIP.rpVEB8By8KHvmgVcFJleaQHaLV?pid=ImgDet&w=502&h=768&rs=1" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Antes De Ti</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Only Physical</h6>
                 <p class="card-text">$463.80</p>
                 <div>
-                  <a title="Añadir" href="#" class="card-link"><img src="Img\añadircarro.png" alt="añadircarro" title="Añadir al carrito"></a>
-                  <a title="LikeIcon" href="#" class="card-link"><img src="Img\like.png" alt=""></a>
-                  <a title="MoreIcon" href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt="Mas" title="Mostrar más"></a>
+                  <a href="#" class="card-link"><img src="Img\añadircarro.png" alt=""></a>
+                  <a href="#" class="card-link"><img src="Img\like.png" alt=""></a>
+                  <a href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt=""></a>
                  </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="https://www.mflibreria.com/wp-content/uploads/2021/02/9788497941846.jpg" class="card-img-top" alt="Orgullo y Prejuicio" title="Libro">
+              <img src="https://www.mflibreria.com/wp-content/uploads/2021/02/9788497941846.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Orgullo y Prejuicio</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Physical and E-book Available</h6>
                 <p class="card-text">$290.00</p>
                 <div>
-                  <a title="Añadir" href="#" class="card-link"><img src="Img\añadircarro.png" alt="añadircarro" title="Añadir al carrito"></a>
-                  <a title="LikeIcon" href="#" class="card-link"><img src="Img\like.png" alt="Like" title="Like"></a>
-                  <a title="MoreIcon"href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt="Mas" title="Mostrar más"></a>
+                  <a href="#" class="card-link"><img src="Img\añadircarro.png" alt=""></a>
+                  <a href="#" class="card-link"><img src="Img\like.png" alt=""></a>
+                  <a href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt=""></a>
                  </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="https://th.bing.com/th/id/R.c0b15531e8fae1bf3b8d361adf2c4341?rik=1Mh3%2br4CK%2bDPlQ&pid=ImgRaw&r=0" class="card-img-top" alt="La chica salvaje" title="Libro">
+              <img src="https://th.bing.com/th/id/R.c0b15531e8fae1bf3b8d361adf2c4341?rik=1Mh3%2br4CK%2bDPlQ&pid=ImgRaw&r=0" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">La Chica Salvaje</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Physical and E-book Available</h6>
                 <p class="card-text">$464.50</p>
                 <div>
-                  <a title="Añadir" href="#" class="card-link"><img src="Img\añadircarro.png" alt="añadircarro" title="Añadir al carrito"></a>
-                <a title="LikeIcon" href="#" class="card-link"><img src="Img\like.png" alt="Like" title="Like"></a>
-                <a title="MoreIcon" href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt="Mas" title="Mostrar más"></a>
+                  <a href="#" class="card-link"><img src="Img\añadircarro.png" alt=""></a>
+                <a href="#" class="card-link"><img src="Img\like.png" alt=""></a>
+                <a href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt=""></a>
                </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="https://th.bing.com/th/id/OIP.s9K9scmDCewre7efyjXdbQHaLW?pid=ImgDet&rs=1" class="card-img-top" alt="Sleeping Beauties" title="Libro">
+              <img src="https://th.bing.com/th/id/OIP.s9K9scmDCewre7efyjXdbQHaLW?pid=ImgDet&rs=1" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Sleeping Beauties</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Physical and E-book Available</h6>
                 <p class="card-text">$270.70</p>
                 <div>
-                  <a title="Añadir" href="#" class="card-link"><img src="Img\añadircarro.png" alt="añadircarro" title="Añadir al carrito"></a>
-                <a title="LikeIcon" href="#" class="card-link"><img src="Img\like.png" alt="Like" title="Like"></a>
-                <a title="MoreIcon" href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt="Mas" title="Mostrar más"></a>
+                  <a href="#" class="card-link"><img src="Img\añadircarro.png" alt=""></a>
+                <a href="#" class="card-link"><img src="Img\like.png" alt=""></a>
+                <a href="#" class="card-link d-flex justify-content-end"><img src="Img\more.png" alt=""></a>
                 </div>
               </div>
             </div>
@@ -276,10 +244,10 @@
               <!--Grid column-->
               <div class="justify-content-center mb-4 mb-md-0 ">
                 <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
-                  <img src="https://cdn-icons-png.flaticon.com/512/2702/2702069.png" height="70" alt="icon Liibros" title="Icon"
+                  <img src="https://cdn-icons-png.flaticon.com/512/2702/2702069.png" height="70" alt=""
                        loading="lazy" />
                 </div>
-                <h1 class="text-center">BookLife</h1>
+                <h3 class="text-center">BookLife</h3>
                 <h5 class="text-center">Who are we?</h5>
                 <p class="text-center">
                   We are a bookstore at your fingertips, any book you are looking for, you can find it with us.</p>           
@@ -290,188 +258,166 @@
 </div>
 
   <!-- Footer -->
-<footer class="bg-100 text-center text-dark">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-      <!-- Facebook -->
-      <a title="Facebook_Link" class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100087043568574" role="button"
-        ><img src="Img\fb.png" alt="Facebook" title="Facebook"></a>
-
-      <!-- Google -->
-      <a title="IconGoogle" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><img src="Img\google.png" alt="Google" title="Google"></a>
-
-      <!-- Instagram -->
-      <a title="IconInsta" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><img src="Img\insta.png" alt="Instagram" title="Instagram"></a>
-
+  <footer class="bg-100 text-center text-dark">
+  
+    <div class="container p-4">
       
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Form -->
-    <section class="">
-      <form action="">
-        <!--Grid row-->
-        <div class="row d-flex justify-content-center">
-          <!--Grid column-->
-          <div class="col-auto">
-            <p class="pt-2">
-              <strong>Sign up for our newsletter</strong>
-            </p>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-5 col-12">
-            <!-- Email input -->
-            <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example2" class="form-control" />
-              <label class="form-label" for="form5Example2">Email address</label>
+      <section class="mb-4">
+       
+        <a class="btn btn-floating m-1" href="#!" role="button"
+          ><img src="Img\fb.png" alt=""></a>
+  
+        <a class="btn btn-floating m-1" href="#!" role="button"
+          ><img src="Img\google.png" alt=""></a>
+  
+        <a class="btn btn-floating m-1" href="#!" role="button"
+          ><img src="Img\insta.png" alt=""></a>
+  
+        
+      </section>
+      
+      <section class="">
+        <form action="">
+          
+          <div class="row d-flex justify-content-center">
+            
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
             </div>
+            
+            <div class="col-md-5 col-12">
+              
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            
+            <div class="col-auto">
+              
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+           
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-auto">
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-outline-light mb-4">
-              Subscribe
-            </button>
+          
+        </form>
+      </section>
+      
+      <section class="mb-4">
+        <p>
+          Keep aware about our newest news and offers.
+          You can unfollow us whenever you want, we invite you to check out for our privacy terms and conctact information.
+        </p>
+      </section>
+      
+      <section class="">
+       
+        <div class="row">
+         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Products</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Price off</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">New Books</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Best sellers</a>
+              </li>
+            </ul>
           </div>
-          <!--Grid column-->
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">This Enterprise</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Deliver</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Legal Advertisement</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Terms and conditions</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Your Account</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Personal Information</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Orders</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Directions</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">The Store</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">BookLife</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">México</a>
+              </li>
+              <p>Send us an email <strong>BookLife@gmail.com</strong></p>
+            </ul>
+          </div>
+         
         </div>
-        <!--Grid row-->
-      </form>
-    </section>
-    <!-- Section: Form -->
-
-    <!-- Section: Text -->
-    <section class="mb-4">
-      <p>
-        Keep aware about our newest news and offers.
-        You can unfollow us whenever you want, we invite you to check out for our privacy terms and conctact information.
-      </p>
-    </section>
-    <!-- Section: Text -->
-
-    <!-- Section: Links -->
-    <section class="">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Products</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a title="Price" href="#!" class="text-white">Price off</a>
-            </li>
-            <li>
-              <a title="Books" href="#!" class="text-white">New Books</a>
-            </li>
-            <li>
-              <a title="Sellers" href="#!" class="text-white">Best sellers</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">This Enterprise</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a title="Deliver" href="#!" class="text-white">Deliver</a>
-            </li>
-            <li>
-              <a title="Legal" href="#!" class="text-white">Legal Advertisement</a>
-            </li>
-            <li>
-              <a title="Conditions" href="#!" class="text-white">Terms and conditions</a>
-            </li>
-            <li>
-              <a title="Us" href="#!" class="text-white">About Us</a>
-            </li>
-            <li>
-              <a title="ContactUSS" href="#!" class="text-white">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Your Account</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a title="Personal" href="#!" class="text-white">Personal Information</a>
-            </li>
-            <li>
-              <a title="Orders" href="#!" class="text-white">Orders</a>
-            </li>
-            <li>
-              <a title="Directions" href="#!" class="text-white">Directions</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">The Store</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a title="BookLife" href="#!" class="text-white">BookLife</a>
-            </li>
-            <li>
-              <a title="México" href="#!" class="text-white">México</a>
-            </li>
-            <p>Send us an email <strong>BookLife@gmail.com</strong></p>
-          </ul>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </section>
-    <!-- Section: Links -->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright:
-    <a title="web" class="text-white" >BookLife.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+        
+      </section>
+     
+    </div>
+   
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="#!">BookLife.com</a>
+    </div>
     
+  </footer>
+  <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000000",
+          "text": "#aaccee"
+        },
+        "button": {
+          "background": "#4b81e8",
+          "text": "#000000"
+        }
+      },
+      "content": {
+        "message": "Este webside utiliza coockies para garantizar una mejor experiencia de usuario.",
+        "dismiss": "Acepto!",
+        "link": "Leer más..."
+      }
+    });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
-<script>
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#000000",
-        "text": "#aaccee"
-      },
-      "button": {
-        "background": "#4b81e8",
-        "text": "#000000"
-      }
-    },
-    "content": {
-      "message": "Este webside utiliza coockies para garantizar una mejor experiencia de usuario.",
-      "dismiss": "Acepto!",
-      "link": "Leer más..."
-    }
-  });
-  </script>
 </html>
