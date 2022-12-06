@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookLife</title>
+    
+    <script src="https://kit.fontawesome.com/d71d380a4f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+        <!--Nav-->
+        <div id="header-div">
+          <ul class="navbar bg-negro mb-0 sticky-top">
+              <div id="nav1">
+                  <li class="nav-item">
+                      <nav class="navbar bg-main ms-1">
+                          <div class="container-fluid">
+
+                            <!-- Example split danger button -->
+                          <div class="btn-group">
+                            <a class="navbar-brand text-blanco" href="Negocios.html">
+                              <img src="C:\Users\pablo\OneDrive\Escritorio\NegociosPro\logo.jpeg" alt="BookLife"  class="text-blanco d-inline-block align-text-top">
+                            </a>
+                            <button type="button" class="btn btn-logo text-blanco dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Lista de Deseos</a></li>
+                              <li><a class="dropdown-item" href="#">Carro de compras</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Contáctanos</a></li>
+                            </ul>
+                          </div>
+
+                          
+                          </div>
+                      </nav>
+                  </li>
+                  <li class="navbar bg-negro dropdown ms-4">
+                    <a class="nav-link dropdown-toggle text-blanco" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Libros
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="catalogof.html">Físico</a></li>
+                      <li><a class="dropdown-item" href="catalogoe.html">E-Book</a></li>
+                    </ul>
+                </li>
+                
+                <li class="navbar bg-negro ms-4">
+                    <a class="nav-link text-blanco" href="catalogotodos.html">Explorar</a>
+                </li>
+                  
+                  <li class="navbar bg-negro ms-4">
+                      <a class="nav-link text-blanco" href="">Sobre Nosotros</a>
+                  </li>
+              
+              </div>
+              
+              <div id="nav2"> 
+                  <li class="navbar ms-4">
+                      <a class="btn text-blanco" href="#">Iniciar Sesión</a>
+  
+                  </li>
+                  <li class="navbar ms-4">
+                      <a class="btn text-blanco">Registrarse</a>
+                  </li>
+              </div>
+              
+          </ul>
+      </div>
+
+
+        <div class="container-fluid" style="padding: 20px;">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 text-center">
+                    <div class="row mb-1"><img src="https://th.bing.com/th/id/R.16da21c3f8d5ee32e37dc8da7564385e?rik=ZElu0bp0hZZuZQ&pid=ImgRaw&r=0" alt=""></div>
+                    <div class="row mb-1"><img src="https://th.bing.com/th/id/OIP.01B-sqUvSaTGGtiBP11kEgAAAA?pid=ImgDet&w=237&h=338&rs=1" alt=""></div>
+                    <div class="row mb-1"><img src="https://th.bing.com/th/id/OIP.QRSTi_1B2DxlxZiinVKzowHaFP?pid=ImgDet&w=638&h=451&rs=1" alt=""></div>
+                </div>
+                <div class="col-lg-4 text-center my-5">
+                    <div class="image_selected"><img src="https://th.bing.com/th/id/OIP.3ekiX7G0MyOljwZJ_4wgTQAAAA?pid=ImgDet&rs=1" class="w-75" alt=""></div>
+                    <div>
+                        <div class="row" style="margin-top: 15px;">
+                            <div class="col-xs-6"> 
+                                <button type="button" class="btn btn-primary shop-button" ><a href="#" class="card-link"><img src="C:\Users\pablo\OneDrive\Escritorio\NegociosPro\añadircarro.png" alt=""></a></button> 
+                                <button type="button" class="btn btn-danger shop-button" ><a href="#" class="card-link"><img src="C:\Users\pablo\OneDrive\Escritorio\NegociosPro\like.png" alt=""></a></button>
+                                <button type="button" class="btn btn-success shop-button mx-3" >Comprar Ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product_description">
+                        <nav>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="usuariolog.html">Inicio</a></li>
+                                <li class="breadcrumb-item active"><a>Libros</a></li>
+                            </ol>
+                        </nav>
+                        <div class="product_name">Harry Potter y la piedra filosofal</div>
+                        <!--Cambiar Rate Stars Css-->
+                        <div class="stars">
+                        <br>
+                          <h5>Calificación de los usuarios:</h5>
+                              <form action="">
+                                <input class="star star-5" id="star-5" type="radio" name="star"/>
+                                <label class="star star-5" for="star-5"></label>
+                                <input class="star star-4" id="star-4" type="radio" name="star"/>
+                                <label class="star star-4" for="star-4"></label>
+                                <input class="star star-3" id="star-3" type="radio" name="star"/>
+                                <label class="star star-3" for="star-3"></label>
+                                <input class="star star-2" id="star-2" type="radio" name="star"/>
+                                <label class="star star-2" for="star-2"></label>
+                                <input class="star star-1" id="star-1" type="radio" name="star"/>
+                                <label class="star star-1" for="star-1"></label>
+                              </form>
+                      </div>
+
+                        <div> <span class="product_price">$ 586,00</span></div>
+                        <div> <span class="product_dispon">Disponibilidad:</span> <span style='color:black'> Libro físico y en formato digital.<span> </div>
+                            <div> <span class="product_info">J.K. Rowling Es Autora de los Siete Libros de la Famosa Saga de Harry Potter. Amada por Lectores de Todo El Mundo, la Serie Ha Vendido Más de 500 Millones de Ejemplares, Se Ha Traducido a Ochenta Idiomas y Ha Inspirado Ocho Películas de Enorme Éxito de Taquilla. <span><br> 
+                              <p></p>  
+                              <span class="product_info">e-Book para todas las plataformas<span><br> 
+                                <span class="product_info">ISBN-10: 8418174072
+                                    ISBN-13: 978-8418174070<span><br> 
+                                <span class="product_info">19 unidades vendidas esta semana<span> </div>
+                            <div class="singleline">
+                        <div> <span class="product_info">Instalado en casa de la horrible familia Dursley, en el número 4 de Privet Drive, donde duerme en una alacena bajo la escalera y a los once años nunca ha celebrado su cumpleaños, la magia es algo totalmente desconocido para Harry Potter. Pero el día que un búho misterioso deja una carta con una invitación al Colegio Hogwarts de Magia y Hechicería, 
+                            su vida da un vuelco para siempre. Allí, en ese lugar insólito y asombroso, Harry no sólo hará amigos entrañables y conocerá un deporte que los alumnos practican volando montados en escobas, sino que también descubrirá que la magia está en todas partes y, tal vez lo más importante, que el destino ha dispuesto para él un futuro maravilloso. Siempre que sobreviva al terrible obstáculo que se interpone en su camino. Con ilustraciones a todo color y originales sorpresas interactivas, esta magnífica edición del primer libro de la saga de Harry Potter, obra del prestigioso estudio MinaLima, cautivará a lectores de todas las edades.<span><br> 
+                        <div class="singleline">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+  
+      <div class="container my-3">
+        <div class="bg-ex d-flex text-center justify-items-center text-white">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row my-4">
+              <!--Grid column-->
+              <div class="justify-content-center mb-4 mb-md-0 ">
+                <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2702/2702069.png" height="70" alt=""
+                       loading="lazy" />
+                </div>
+                <h3 class="text-center">BookLife</h3>
+                <h5 class="text-center">Who are we?</h5>
+                <p class="text-center">
+                  We are a bookstore at your fingertips, any book you are looking for, you can find it with us.</p>           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<footer class="bg-100 text-center text-dark">
+  
+  <div class="container p-4">
+    
+    <section class="mb-4">
+     
+      <a class="btn btn-floating m-1" href="#!" role="button"
+        ><img src="C:\Users\pablo\OneDrive\Escritorio\NegociosPro\fb.png" alt=""></a>
+
+      <a class="btn btn-floating m-1" href="#!" role="button"
+        ><img src="C:\Users\pablo\OneDrive\Escritorio\NegociosPro\google.png" alt=""></a>
+
+      <a class="btn btn-floating m-1" href="#!" role="button"
+        ><img src="C:\Users\pablo\OneDrive\Escritorio\NegociosPro\insta.png" alt=""></a>
+
+      
+    </section>
+    
+    <section class="">
+      <form action="">
+        
+        <div class="row d-flex justify-content-center">
+          
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          
+          <div class="col-md-5 col-12">
+            
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          
+          <div class="col-auto">
+            
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+         
+        </div>
+        
+      </form>
+    </section>
+    
+    <section class="mb-4">
+      <p>
+        Keep aware about our newest news and offers.
+        You can unfollow us whenever you want, we invite you to check out for our privacy terms and conctact information.
+      </p>
+    </section>
+    
+    <section class="">
+     
+      <div class="row">
+       
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Products</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Price off</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">New Books</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Best sellers</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">This Enterprise</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Deliver</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Legal Advertisement</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Terms and conditions</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">About Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Your Account</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Personal Information</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Orders</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Directions</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">The Store</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">BookLife</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">México</a>
+            </li>
+            <p>Send us an email <strong>BookLife@gmail.com</strong></p>
+          </ul>
+        </div>
+       
+      </div>
+      
+    </section>
+   
+  </div>
+ 
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="#!">BookLife.com</a>
+  </div>
+  
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
